@@ -10,9 +10,12 @@ Students are expected to:
 Member list
 =====================================
 
-*Add student list of your group here*
+Phạm Duy Minh
+Đặng Vũ Sơn Tùng
+Trần Thanh Tùng
+Nguyễn Hồng Sơn
+Bùi Việt Hùng
 
 Project description
 =====================================
-
-*Add your project description here*
+Web application for personal photo gallery
