@@ -1,0 +1,62 @@
+#screen {
+    vertical-align: middle;
+    border-style: none;
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+
+#screen:hover { 
+    padding: 10px;
+    background-color: rgb(201, 201, 196);
+}
+
+#upImage{
+    width: 50px;
+    height: 50px;
+    float :left ;
+    
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    display: none;
+}
+
+#closeImage{
+    width: 20px;
+    height: 20px;
+    margin: -28px -28px 0 0;
+    
+    position: absolute;
+    top: 40px;
+    left: 260px;
+    opacity: 0,1;
+}
+
+#closeImage:hover{
+    opacity: 0,8;
+}
+
+
+#uploadImage{
+    position: fixed;
+    top: 130px;
+    left: 20px;
+    display: none;
+}
+
+#chooseImage{
+    display: none;
+}
+
+#Home{
+    display: none;
+}
+
+.login-window{
+    margin:10px;
+    padding-top: 10px;
+}

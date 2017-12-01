@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Thumbnail Gallery - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+    <link href="css/1.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/1.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+    <link href="css2/1.css" rel="stylesheet">
+
+    <script type="text/javascript" src="fancy/jquery.fancybox.min.js"></script>
+    
+    <link href="fancy/jquery.fancybox.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Photo Gallery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"  id ="Home">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id = "About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="Services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="Contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="login-window" href="#login-box">Sign in  </a>
+            </li>
+            <li class="nav-item">
+              <a class="logout-window" href="">Log out</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <h1 class="my-4 text-center text-lg-left">Thumbnail Gallery</h1>
+      <img   id="upImage" src="img/Ima.png" />
+      <form method="POST"  action='php/addImage.php' enctype="multipart/form-data" target ="_blank">
+        <input type="file" name="myimage" id="chooseImage">
+        <input type="submit" name="submit_image" value="Upload" id="uploadImage">
+        </form>
+        
+      <div class="row text-center text-lg-left" id= "main">
+          
+    </div>
+
+    <div id ="welcome">
+      <h1> WELCOME TO OUR GROUP PROJECT</h1>
+    </div>
+    
+    </div>
+    <!-- /.containerdiv>
+ -->
+
+    <!-- Sign in box -->
+    <div id="login-box" class="login-popup">
+      <a href="#" class="close"><img src="img/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+      <p>Sign in</p>
+        <form method="post" class="signin"  action= 'php/login/login.php' target ="_blank" >
+              <fieldset class="textbox">
+              <label class="username">
+              <span>Username </span>
+              <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username">
+              </label>
+              
+              <label class="password">
+              <span>Password</span>
+              <input id="password" name="password" value="" type="password" placeholder="Password">
+              </label>
+
+              
+              
+              <input class="signin" type="submit" name="signin" value="Sign in">
+              
+              <p>
+              <a class="signup" href="#logup-box">Need an account?</a>
+              </p>
+              
+              </fieldset>
+        </form>
+      </div>
+
+      <!-- Sign up box -->
+    <div id="logup-box" class="logup-popup">
+      <a href="#" class="close"><img src="img/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+      <p>Sign up</p>
+      <form method="POST" class="signin"   target="_blank" action="php/signup/signup.php">
+              <fieldset class="textbox">
+              <label class="username1">
+              <span>Username </span>
+              <input id="username1" name="username1" value="" type="text" autocomplete="on" placeholder="Username">
+              </label>
+              
+              <label class="password1">
+              <span>Password</span>
+              <input id="password1" name="password1" value="" type="password" placeholder="Password">
+              </label>
+
+
+              <label class="password1">
+                <span>Retype-Password</span>
+                <input id="re-password1" name="re-password1" value="" type="password" placeholder="re-Password">
+              </label>
+
+
+              <label class="email">
+                <span>Email</span>
+                <input id="email" name="email1" value="" type="text" placeholder="Email">
+              </label>
+              
+              
+              
+              <input class="signup" type="submit" name ="submit" value ="Sign up">
+              
+              <p>
+              
+              </p>
+              
+              </fieldset>
+        </form>
+      </div>
+    <!-- Footer 
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Group project</p>
+      </div>
+       /.container
+    </footer> 
+
+    <!-- Bootstrap core JavaScript -->
+    
+
+  </body>
+
+</html>
